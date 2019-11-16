@@ -16,10 +16,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    cvdetect.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    cvdetect.h \
     mainwindow.h
 
 FORMS += \
@@ -29,3 +31,13 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+INCLUDEPATH+=/usr/local/include\
+/usr/local/include/opencv\
+/usr/local/include/opencv2
+
+
+LIBS+=/usr/local/lib/libopencv_highgui.so\
+/usr/local/lib/libopencv_core.so\
+/usr/local/lib/libopencv_imgproc.so\
+/usr/local/lib/libopencv_imgcodecs.so

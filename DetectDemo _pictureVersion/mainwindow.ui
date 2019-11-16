@@ -14,6 +14,19 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_showOriginImage">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>410</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开图片</string>
+    </property>
+   </widget>
    <widget class="QScrollArea" name="originImage">
     <property name="geometry">
      <rect>
@@ -86,17 +99,56 @@
      <string>效果图：</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_start">
+   <widget class="QPushButton" name="pushButton_subtractChannel">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>420</y>
+      <x>150</x>
+      <y>410</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>通道相减</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_threshold">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>410</y>
       <width>91</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>start</string>
+     <string>二值化</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>460</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>HSV分割</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_searchLED">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>410</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>搜索LED</string>
     </property>
    </widget>
   </widget>
